@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap');
+
+/*Variáveis*/
+:root {
+    --bgSite: #d7d4ff;
+    --buttonColor: #6c63ff;
+  
+    --white: #ffffff;
+    --white300: #f9f9f9;
+  
+    --title: #2b2b2b;
+    --text: #555555;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background: var(--white300);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+/* INICIO DO CSS */
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    width: 100%;
+    height: 560px;
+    background: var(--bgSite);
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 7%;
+}
+
+.esquerda{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+}
+
+.esquerda h1{
+    width: 350px;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--title);
+    margin-bottom: 17.5px;
+}
+
+.esquerda p{
+    width: 390px;
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 32px;
+    font-family: 'Lato', serif;
+}
+
+.esquerda button{
+    width: 155px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--buttonColor);
+    color: var(--white);
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', serif;
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    cursor: pointer;
+}
+.direita{
+    width: 40%;
+}
+
+.direita img{
+    width: 100%;
+    display: flex;
+    align-items: right;
+}
+
+.titulos{
+    background: var(--white300);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 100px 82px 100px;
+}
+
+.conteudo-1{
+    width: 340px;
+    height: 423px;
+    margin-bottom: 68px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+.conteudo-1 img{
+    width: 340px;
+    height: 222px;
+    cursor: pointer;
+}
+
+.escrita{
+    padding: 30px;
+    background: var(--white);
+}
+
+.escrita h1{
+    font-size: 24px;
+    font-weight: 700px;
+    color: var(--title);
+    margin-bottom: 26px;
+}
+
+.escrita p{
+    font-size: 18px;
+    font-weight: 400px;
+    color: var(--text);
+    line-height: 30px;
+    font-family: 'Lato', serif;
+}
+
+.contato{
+    width: 100%;
+    background: var(--bgSite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bgSite);
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario h1{
+    margin-top: 85px;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--title);
+    margin-bottom: 60px;
+}
+
+.formulario input{
+    width: 470px;
+    height: 65px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgba(110, 114,117,0.74);
+    padding-left: 15px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    border-radius: 5px;
+}
+
+#mensagem{
+    height: 165px;
+}
+
+.formulario button{
+    width: 470px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--buttonColor);
+    font-size: 20px;
+    color: var(--white);
+    font-family: 'Lato', serif;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+
+    .principal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esquerda{
+        width: 100%;
+    }
+    .direita{
+        width: 90%;
+    }
+    .titulos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 65px;
+    }
+
+    .contato{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
